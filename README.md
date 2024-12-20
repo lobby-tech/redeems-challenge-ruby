@@ -32,6 +32,12 @@ Após a construção do container, execute o comando abaixo para que executar o 
 docker-compose up app
 ```
 
+Caso seja necessário executar migrations, você pode executar o comando:
+
+```sh
+docker-compose up migrate
+```
+
 Caso queeria visualizar o resultado dos testes, você pode executar o seguinte comando abaixo:
 
 ```sh

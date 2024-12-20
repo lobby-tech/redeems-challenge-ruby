@@ -20,3 +20,12 @@ services:
     environment:
       RAILS_ENV: test
     command: ./bin/rails test
+
+  migrate:
+    image: redeems-challange:1.0
+    build: .
+    volumes:
+      - .:/rails
+    environment:
+      RAILS_ENV: development
+    command: ./bin/rails db:migrate
